@@ -27,7 +27,8 @@ public class Main{
 		} catch ( IOException ex ) {
 			ex.printStackTrace();
 		}
-		texto = new String( sb.toString().getBytes(), Charset.forName( "UTF-8" ) );//*/
+		texto = new String( sb.toString().getBytes(), Charset.forName( "UTF-8" ) );
+		texto = texto.replaceAll( "<", " <" ).replaceAll( ">", "> " ).replaceAll( "  +", " " ).replaceAll( "=", "" );//*/
 
 		String path = "data/treiner.ser";
 		CRFTrainer crfTrainer = new CRFTrainer( texto, path );
