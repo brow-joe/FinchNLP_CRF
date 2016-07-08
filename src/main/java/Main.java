@@ -20,7 +20,7 @@ public class Main{
 		String texto = "<START:Pessoa> Marcelo <END> foi trabalhar em <START:Cidade> Piratininga <END>";
 
 		//TODO teste txt
-		StringBuffer sb = new StringBuffer();
+		/*StringBuffer sb = new StringBuffer();
 		Path p = Paths.get( "data/corpus_AMAZONIA.txt" );
 		try (Stream< String > lines = Files.lines( p )) {
 			lines.forEach( s -> sb.append( s ) );
@@ -35,7 +35,7 @@ public class Main{
 		crfTrainer.treinar();
 
 		texto = "Juliana trabalha em Ubatuba";
-		texto = "depois se encontram com a dissidência do grupo , os Bacamarteiros de Pinga Fogo";
+		//texto = "depois se encontram com a dissidência do grupo , os Bacamarteiros de Pinga Fogo";
 
 		CRFClassifier classifier = new CRFClassifier( path );
 
