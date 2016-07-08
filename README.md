@@ -1,1 +1,1 @@
-# FinchNLP_CRF
+# Projeto de teste (a partir do stanford ner)
